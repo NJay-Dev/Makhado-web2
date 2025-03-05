@@ -41,37 +41,37 @@
     <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
     <!--  FONT AWESOME -->
     <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
-    
+
     <style>
         .quick-links-section {
             padding: 50px 0;
             background-color: #f8f9fa;
         }
-        
+
         .quick-link-card {
             transition: all 0.3s ease;
             margin-bottom: 20px;
             height: 100%;
             border: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .quick-link-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        
+
         .quick-link-icon {
             font-size: 2.5rem;
             margin-bottom: 15px;
             color: #33d1cb;
         }
-        
+
         .quick-link-title {
             font-weight: 600;
             margin-bottom: 10px;
         }
-        
+
         .quick-link-description {
             font-size: 14px;
             color: #6c757d;
@@ -99,7 +99,7 @@
                         Our main administrative office is situated in <strong>Louis Trichardt</strong> town.
                     </p>
                     <a href="services.html"
-                        class="btn fables-second-background-color fables-second-border-color white-color rounded-0 mr-4 px-md-4 py-2 btn-bg-hover white-color-hover">Our
+                        class="btn fables-second-background-color fables-second-border-color white-color rounded-0 mr-4 px-md-4 py-2 btn-bg-hover white-color-hover">Community
                         Services</a>
                     <a href="about.html"
                         class="btn fables-second-border-color white-color rounded-0 px-md-4 py-2 fables-second-hover-background-color">Learn
@@ -316,282 +316,437 @@
             </div>
         </div>
 
-            <!-- Quick Links Section Start -->
-    <div class="quick-links-section">
-        <div class="container">
-            <h2 class="fables-main-text-color text-center underline my-4 font-25 semi-font mb-5">Quick Links</h2>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-file-text-o quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Tenders</h3>
-                            <p class="quick-link-description">View current tenders and procurement opportunities</p>
-                            <a href="tenders/advertised-tenders.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">View Tenders</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-briefcase quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Vacancies</h3>
-                            <p class="quick-link-description">Explore career opportunities at Makhado Municipality</p>
-                            <a href="vacancies/advertised-posts.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">View Jobs</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Pay Bills</h3>
-                            <p class="quick-link-description">Pay your municipal bills and services online</p>
-                            <a href="services/billing.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Pay Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-phone quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Contact Us</h3>
-                            <p class="quick-link-description">Get in touch with Makhado Municipality</p>
-                            <a href="contact.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Contact</a>
+       <!-- Quick Links Section Start -->
+<div class="quick-links-section" style="background-image: url(assets/custom/images/grad.jpg); background-size: cover; padding: 50px 0;">
+    <div class="container">
+        <h2 class="text-center underline my-4 font-25 semi-font mb-5 fables-main-text-color">Quick Links</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-file-text-o quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Tenders</h3>
+                        <p class="quick-link-description">View current tenders and procurement opportunities</p>
+                        <div class="dropdown-menu-right">
+                            <button class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2 dropdown-toggle" type="button" id="tenderDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                View Tenders
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="tenderDropdown">
+                                <a class="dropdown-item" href="tenders/advertised-tenders.html">Advertised Tenders</a>
+                                <a class="dropdown-item" href="tenders/awarded-tenders.html">Awarded Tenders</a>
+                                <a class="dropdown-item" href="tenders/cancelled-tenders.html">Cancelled Tenders</a>
+                                <a class="dropdown-item" href="tenders/list-of-bids-received.html">List of Bids Received</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="row mt-4">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-newspaper-o quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">News & Events</h3>
-                            <p class="quick-link-description">Stay updated with the latest news and events</p>
-                            <a href="news.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Read News</a>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-briefcase quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Vacancies</h3>
+                        <p class="quick-link-description">Explore career opportunities at Makhado Municipality</p>
+                        <div class="dropdown">
+                            <button class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2 dropdown-toggle" type="button" id="vacancyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                View Jobs
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="vacancyDropdown">
+                                <a class="dropdown-item" href="vacancies/advertised-posts.html">Advertised Posts</a>
+                                <a class="dropdown-item" href="vacancies/ftc-epwp.html">FTC (EPWP)</a>
+                                <a class="dropdown-item" href="vacancies/learnerships.html">Learnerships</a>
+                                <a class="dropdown-item" href="vacancies/internships.html">Internships</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-download quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Documents</h3>
-                            <p class="quick-link-description">Download forms, policies and publications</p>
-                            <a href="documents.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Download</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-credit-card quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Pay Bills</h3>
+                        <p class="quick-link-description">Pay your municipal bills and services online</p>
+                        <button onclick="promptLogin()" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">
+                            Pay Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-phone quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Contact Us</h3>
+                        <p class="quick-link-description">Get in touch with Makhado Municipality</p>
+                        <a href="contact.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-newspaper-o quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">News & Events</h3>
+                        <p class="quick-link-description">Stay updated with the latest news and events</p>
+                        <a href="news.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Read News</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-download quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Documents</h3>
+                        <p class="quick-link-description">Download forms, policies and publications</p>
+                        <div class="dropdown">
+                            <button class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2 dropdown-toggle" type="button" id="documentsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Download
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="documentsDropdown">
+                                <a class="dropdown-item" href="documents/forms.html">Forms</a>
+                                <a class="dropdown-item" href="documents/policies.html">Policies</a>
+                                <a class="dropdown-item" href="documents/bylaws.html">By-Laws</a>
+                                <a class="dropdown-item" href="documents/reports.html">Reports</a>
+                                <a class="dropdown-item" href="documents/publications.html">Publications</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-graduation-cap quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Learnerships</h3>
-                            <p class="quick-link-description">Explore learnership and internship opportunities</p>
-                            <a href="vacancies/learnerships.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Learn More</a>
-                        </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-graduation-cap quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Learnerships</h3>
+                        <p class="quick-link-description">Explore learnership and internship opportunities</p>
+                        <a href="vacancies/learnerships.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card quick-link-card text-center p-4">
-                        <div class="card-body">
-                            <i class="fa fa-map-marker quick-link-icon" aria-hidden="true"></i>
-                            <h3 class="quick-link-title fables-main-text-color font-18">Tourism</h3>
-                            <p class="quick-link-description">Discover tourist attractions in Makhado</p>
-                            <a href="services/tourism.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Explore</a>
-                        </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card quick-link-card text-center p-4">
+                    <div class="card-body">
+                        <i class="fa fa-map-marker quick-link-icon fa-4x" aria-hidden="true"></i>
+                        <h3 class="quick-link-title fables-main-text-color font-18">Tourism</h3>
+                        <p class="quick-link-description">Discover tourist attractions in Makhado</p>
+                        <a href="services/tourism.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Explore</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quick Links Section End -->
+</div>
+<!-- Quick Links Section End -->
 
-        <!--THE NEWS-->
-        <div class="my-4 my-lg-5">
-            <h2 class="fables-main-text-color text-center underline my-4 font-25 semi-font mb-5">Related Articles</h2>
-            <div class="owl-carousel owl-theme fables-main-dots carousel-items-4 mb-0 mb-lg-5">
-                <div>
-                    <div class="image-container zoomIn-effect">
-                        <a href="#"><img src="assets/custom/images/st1.jpg" alt="" class="w-100"></a>
-                    </div>
 
-                    <div class="fables-forth-text-color font-14  my-2">
-                        <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> 20 November 2024 </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
-                        <a href=""
-                            class="fables-forth-text-color fables-second-hover-color position-relative z-index">11</a>
-                    </div>
-                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">A
-                            fight against HIV/AIDS & TB</a></h2>
-                    <a href="news.html"
-                        class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
-                            class="fas fa-chevron-right"></i></a>
-                </div>
-                <div>
-                    <div class="image-container zoomIn-effect">
-                        <a href="#"><img src="assets/custom/images/st2.jpg" alt="" class="w-100"></a>
-                    </div>
+<!--THE NEWS-->
+<div class="quick-links-section" style="background-image: url(assets/custom/images/grad.jpg); background-size: cover; padding: 50px 0;" >
+    <h2 class="fables-main-text-color text-center underline my-4 font-25 semi-font mb-5">Related Articles</h2>
+    <div class="owl-carousel owl-theme fables-main-dots carousel-items-4 mb-0 mb-lg-5">
+        <div>
+            <div class="image-container zoomIn-effect">
+                <a href="#"><img src="assets/custom/images/st1.jpg" alt="" class="w-100"></a>
+            </div>
 
-                    <div class="fables-forth-text-color font-14 my-2">
-                        <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> 22 November 2024 </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
-                        <a href=""
-                            class="fables-forth-text-color fables-second-hover-color position-relative z-index">26</a>
-                    </div>
-                    <h2 class="font-18 semi-font"><a href="#"
-                            class="fables-main-text-color fables-second-hover-color">Disability Day Celebration</a></h2>
-                    <a href="news.html"
-                        class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
-                            class="fas fa-chevron-right"></i></a>
-                </div>
-                <div>
-                    <div class="image-container zoomIn-effect">
-                        <a href="#"><img src="assets/custom/images/st3.jpg" alt="" class="w-100"></a>
-                    </div>
+            <div class="fables-forth-text-color font-14  my-2">
+                <span class="fables-icondata fables-second-text-color mr-1"></span>
+                <span class="mr-3"> 20 November 2024 </span>
+                <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                <a href=""
+                    class="fables-forth-text-color fables-second-hover-color position-relative z-index">11</a>
+            </div>
+            <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">A
+                    fight against HIV/AIDS & TB</a></h2>
+            <a href="news.html"
+                class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <div class="image-container zoomIn-effect">
+                <a href="#"><img src="assets/custom/images/st2.jpg" alt="" class="w-100"></a>
+            </div>
 
-                    <div class="fables-forth-text-color font-14 my-2">
-                        <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> 28 November 2024 </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
-                        <a href=""
-                            class="fables-forth-text-color fables-second-hover-color position-relative z-index">31</a>
-                    </div>
-                    <h2 class="font-18 semi-font"><a href="#"
-                            class="fables-main-text-color fables-second-hover-color">Limpopo MEC launches Road Safety
-                            Campaign</a></h2>
-                    <a href="news.html"
-                        class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
-                            class="fas fa-chevron-right"></i></a>
-                </div>
-                <div>
-                    <div class="image-container zoomIn-effect">
-                        <a href="#"><img src="assets/custom/images/st4.jpg" alt="" class="w-100"></a>
-                    </div>
+            <div class="fables-forth-text-color font-14 my-2">
+                <span class="fables-icondata fables-second-text-color mr-1"></span>
+                <span class="mr-3"> 22 November 2024 </span>
+                <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                <a href=""
+                    class="fables-forth-text-color fables-second-hover-color position-relative z-index">26</a>
+            </div>
+            <h2 class="font-18 semi-font"><a href="#"
+                    class="fables-main-text-color fables-second-hover-color">Disability Day Celebration</a></h2>
+            <a href="news.html"
+                class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <div class="image-container zoomIn-effect">
+                <a href="#"><img src="assets/custom/images/st3.jpg" alt="" class="w-100"></a>
+            </div>
 
-                    <div class="fables-forth-text-color font-14 my-2">
-                        <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> 29 November 2024 </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
-                        <a href=""
-                            class="fables-forth-text-color fables-second-hover-color position-relative z-index">17</a>
-                    </div>
-                    <h2 class="font-18 semi-font"><a href="#"
-                            class="fables-main-text-color fables-second-hover-color">Mamvuka Mayoral Imbizo sparks hope
-                            for
-                            residents</a>
-                    </h2>
-                    <a href="news.html"
-                        class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
-                            class="fas fa-chevron-right"></i></a>
-                </div>
-                <div>
-                    <div class="image-container zoomIn-effect">
-                        <a href="#"><img src="assets/custom/images/st.jpg" alt="" class="w-100"></a>
-                    </div>
+            <div class="fables-forth-text-color font-14 my-2">
+                <span class="fables-icondata fables-second-text-color mr-1"></span>
+                <span class="mr-3"> 28 November 2024 </span>
+                <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                <a href=""
+                    class="fables-forth-text-color fables-second-hover-color position-relative z-index">31</a>
+            </div>
+            <h2 class="font-18 semi-font"><a href="#"
+                    class="fables-main-text-color fables-second-hover-color">Limpopo MEC launches Road Safety
+                    Campaign</a></h2>
+            <a href="news.html"
+                class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <div class="image-container zoomIn-effect">
+                <a href="#"><img src="assets/custom/images/st4.jpg" alt="" class="w-100"></a>
+            </div>
 
-                    <div class="fables-forth-text-color font-14 my-2">
-                        <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> 20 November 2024 </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
-                        <a href=""
-                            class="fables-forth-text-color fables-second-hover-color position-relative z-index">8</a>
-                    </div>
-                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">A
-                            fight against HIV/Aids & TB continues...</a>
-                    </h2>
-                    <a href="news.html"
-                        class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
-                            class="fas fa-chevron-right"></i></a>
-                </div>
-                <div>
-                    <div class="image-container zoomIn-effect">
-                        <a href="#"><img src="assets/custom/images/st5.jpg" alt="" class="w-100"></a>
-                    </div>
+            <div class="fables-forth-text-color font-14 my-2">
+                <span class="fables-icondata fables-second-text-color mr-1"></span>
+                <span class="mr-3"> 29 November 2024 </span>
+                <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                <a href=""
+                    class="fables-forth-text-color fables-second-hover-color position-relative z-index">17</a>
+            </div>
+            <h2 class="font-18 semi-font"><a href="#"
+                    class="fables-main-text-color fables-second-hover-color">Mamvuka Mayoral Imbizo sparks hope
+                    for
+                    residents</a>
+            </h2>
+            <a href="news.html"
+                class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <div class="image-container zoomIn-effect">
+                <a href="#"><img src="assets/custom/images/st.jpg" alt="" class="w-100"></a>
+            </div>
 
-                    <div class="fables-forth-text-color font-14 my-2">
-                        <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> 20 November 2024 </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>23</a>
-                    </div>
-                    <h2 class="font-18 semi-font"><a href="#"
-                            class="fables-main-text-color fables-second-hover-color">Makhado Municipality unites in
-                            Prayer</a>
-                    </h2>
-                    <a href="news.html"
-                        class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
-                            class="fas fa-chevron-right"></i></a>
+            <div class="fables-forth-text-color font-14 my-2">
+                <span class="fables-icondata fables-second-text-color mr-1"></span>
+                <span class="mr-3"> 20 November 2024 </span>
+                <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                <a href=""
+                    class="fables-forth-text-color fables-second-hover-color position-relative z-index">8</a>
+            </div>
+            <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">A
+                    fight against HIV/Aids & TB continues...</a>
+            </h2>
+            <a href="news.html"
+                class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+            <div class="image-container zoomIn-effect">
+                <a href="#"><img src="assets/custom/images/st5.jpg" alt="" class="w-100"></a>
+            </div>
+
+            <div class="fables-forth-text-color font-14 my-2">
+                <span class="fables-icondata fables-second-text-color mr-1"></span>
+                <span class="mr-3"> 20 November 2024 </span>
+                <span class="fables-iconcomment fables-second-text-color mr-1"></span>23</a>
+            </div>
+            <h2 class="font-18 semi-font"><a href="#"
+                    class="fables-main-text-color fables-second-hover-color">Makhado Municipality unites in
+                    Prayer</a>
+            </h2>
+            <a href="news.html"
+                class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+<!--THE NEWS END-->
+
+<!-- Add these modals at the end of your body tag, before the closing </body> tag -->
+
+<!-- Tenders Modal -->
+<div class="modal fade" id="tendersModal" tabindex="-1" role="dialog" aria-labelledby="tendersModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header fables-second-background-color">
+                <h5 class="modal-title white-color" id="tendersModalLabel">Tenders</h5>
+                <button type="button" class="close white-color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <a href="tenders/advertised-tenders.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-file-text-o mr-2 fables-second-text-color"></i> Advertised Tenders
+                    </a>
+                    <a href="tenders/awarded-tenders.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-check-circle mr-2 fables-second-text-color"></i> Awarded Tenders
+                    </a>
+                    <a href="tenders/cancelled-tenders.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-times-circle mr-2 fables-second-text-color"></i> Cancelled Tenders
+                    </a>
+                    <a href="tenders/list-of-bids-received.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-list mr-2 fables-second-text-color"></i> List of Bids Received
+                    </a>
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn fables-second-background-color white-color" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <!--THE NEWS END-->
+    </div>
+</div>
 
-        <!-- Chatbot Starts -->
+<!-- Vacancies Modal -->
+<div class="modal fade" id="vacanciesModal" tabindex="-1" role="dialog" aria-labelledby="vacanciesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header fables-second-background-color">
+                <h5 class="modal-title white-color" id="vacanciesModalLabel">Vacancies</h5>
+                <button type="button" class="close white-color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <a href="vacancies/advertised-posts.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-briefcase mr-2 fables-second-text-color"></i> Advertised Posts
+                    </a>
+                    <a href="vacancies/ftc-epwp.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-clock-o mr-2 fables-second-text-color"></i> FTC (EPWP)
+                    </a>
+                    <a href="vacancies/learnerships.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-graduation-cap mr-2 fables-second-text-color"></i> Learnerships
+                    </a>
+                    <a href="vacancies/internships.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-users mr-2 fables-second-text-color"></i> Internships
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn fables-second-background-color white-color" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
-        <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-        <script defer>
-          window.botpress.on('*', (event) => {
-            Toastify({ text: `Event: ${event.type}` }).showToast();
-          });
-      
-          window.botpress.on('webchat:ready', (conversationId) => {
-            Toastify({ text: 'Webchat Ready' }).showToast();
-          });
-      
-          window.botpress.on('webchat:opened', (conversationId) => {
-            Toastify({ text: 'Webchat Opened' }).showToast();
-          });
-      
-          window.botpress.on('webchat:closed', (conversationId) => {
-            Toastify({ text: `Webchat Closed` }).showToast();
-          });
-      
-          window.botpress.on('conversation', (conversationId) => {
-            Toastify({ text: `Conversation: ${conversationId}` }).showToast();
-          });
-      
-          window.botpress.on('message', (message) => {
-            Toastify({ text: `Message Received: ${message.id}` }).showToast();
-          });
-      
-          window.botpress.on('messageSent', (message) => {
-            Toastify({ text: `Message Sent: ${message}` }).showToast();
-          });
-      
-          window.botpress.on('error', (error) => {
-            Toastify({ text: `Error: ${error}` }).showToast();
-          });
-      
-          window.botpress.on('webchatVisibility', (visibility) => {
-            Toastify({ text: `Visibility: ${visibility}` }).showToast();
-          });
-      
-          window.botpress.on('webchatConfig', (visibility) => {
-            Toastify({ text: 'Webchat Config' }).showToast();
-          });
-      
-          window.botpress.on('customEvent', (anyEvent) => {
-            Toastify({ text: 'Received a custom event' }).showToast();
-          });
-        </script>
-        <script src="https://mediafiles.botpress.cloud/26a83f89-ace1-4045-92ba-95b836f75669/webchat/v2/config.js"
-          defer></script>
-        <!-- Chatbot Ends -->
+<!-- Documents Modal -->
+<div class="modal fade" id="documentsModal" tabindex="-1" role="dialog" aria-labelledby="documentsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header fables-second-background-color">
+                <h5 class="modal-title white-color" id="documentsModalLabel">Documents</h5>
+                <button type="button" class="close white-color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <a href="documents/forms.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-wpforms mr-2 fables-second-text-color"></i> Forms
+                    </a>
+                    <a href="documents/policies.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-file-text mr-2 fables-second-text-color"></i> Policies
+                    </a>
+                    <a href="documents/bylaws.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-gavel mr-2 fables-second-text-color"></i> By-Laws
+                    </a>
+                    <a href="documents/reports.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-bar-chart mr-2 fables-second-text-color"></i> Reports
+                    </a>
+                    <a href="documents/publications.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-book mr-2 fables-second-text-color"></i> Publications
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn fables-second-background-color white-color" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <!-- /End page content -->
+<!-- Update the Quick Links section to use modals -->
+<script>
+    $(document).ready(function() {
+        // Tenders button click
+        $('#tenders-btn').on('click', function() {
+            $('#tendersModal').modal('show');
+        });
+        
+        // Vacancies button click
+        $('#vacancies-btn').on('click', function() {
+            $('#vacanciesModal').modal('show');
+        });
+        
+        // Documents button click
+        $('#documents-btn').on('click', function() {
+            $('#documentsModal').modal('show');
+        });
+    });
+</script>
+<!-- Chatbot Starts -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+<script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+<script defer>
+    window.botpress.on('*', (event) => {
+        Toastify({ text: `Event: ${event.type}` }).showToast();
+    });
 
-        <!-- Start Footer-->
-        <div id="footer"></div>
-        <!-- /End Footer-->
+    window.botpress.on('webchat:ready', (conversationId) => {
+        Toastify({ text: 'Webchat Ready' }).showToast();
+    });
 
+    window.botpress.on('webchat:opened', (conversationId) => {
+        Toastify({ text: 'Webchat Opened' }).showToast();
+    });
 
-        <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-        <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    window.botpress.on('webchat:closed', (conversationId) => {
+        Toastify({ text: `Webchat Closed` }).showToast();
+    });
+
+    window.botpress.on('conversation', (conversationId) => {
+        Toastify({ text: `Conversation: ${conversationId}` }).showToast();
+    });
+
+    window.botpress.on('message', (message) => {
+        Toastify({ text: `Message Received: ${message.id}` }).showToast();
+    });
+
+    window.botpress.on('messageSent', (message) => {
+        Toastify({ text: `Message Sent: ${message}` }).showToast();
+    });
+
+    window.botpress.on('error', (error) => {
+        Toastify({ text: `Error: ${error}` }).showToast();
+    });
+
+    window.botpress.on('webchatVisibility', (visibility) => {
+        Toastify({ text: `Visibility: ${visibility}` }).showToast();
+    });
+
+    window.botpress.on('webchatConfig', (visibility) => {
+        Toastify({ text: 'Webchat Config' }).showToast();
+    });
+
+    window.botpress.on('customEvent', (anyEvent) => {
+        Toastify({ text: 'Received a custom event' }).showToast();
+    });
+</script>
+<script src="https://mediafiles.botpress.cloud/26a83f89-ace1-4045-92ba-95b836f75669/webchat/v2/config.js"
+    defer></script>
+<!-- Chatbot Ends -->
+
+<!-- Start Footer-->
+<div id="footer"></div>
+<!-- /End Footer-->
+
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js">
+
+</script>
+<script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
         <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
         <script src="assets/vendor/popper/popper.min.js"></script>
         <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
@@ -603,6 +758,18 @@
         <script src="assets/custom/js/jquery-data-to.js"></script>
         <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
         <script src="assets/custom/js/custom.js"></script>
+<script>
+    function promptLogin() {
+        var result = confirm("You need to be logged in to access this feature. Would you like to sign in now?");
+        if (result) {
+            window.location.href = "signin.html";
+        } else {
+            // User clicked Cancel
+            alert("You can sign up for an account to access bill payment features.");
+            window.location.href = "register.html";
+        }
+    }
+</script>
 </body>
 
 </html>
