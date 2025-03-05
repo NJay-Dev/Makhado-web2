@@ -41,6 +41,42 @@
     <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
     <!--  FONT AWESOME -->
     <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+    
+    <style>
+        .quick-links-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .quick-link-card {
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .quick-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .quick-link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #33d1cb;
+        }
+        
+        .quick-link-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .quick-link-description {
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
 </head>
 
 
@@ -100,6 +136,99 @@
             <div class="ticker-item">Public Holidays: Closed</div>
         </div>
     </div>
+
+    <!-- Quick Links Section Start -->
+    <div class="quick-links-section">
+        <div class="container">
+            <h2 class="fables-main-text-color text-center underline my-4 font-25 semi-font mb-5">Quick Links</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-file-text-o quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Tenders</h3>
+                            <p class="quick-link-description">View current tenders and procurement opportunities</p>
+                            <a href="tenders/advertised-tenders.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">View Tenders</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-briefcase quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Vacancies</h3>
+                            <p class="quick-link-description">Explore career opportunities at Makhado Municipality</p>
+                            <a href="vacancies/advertised-posts.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">View Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-credit-card quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Pay Bills</h3>
+                            <p class="quick-link-description">Pay your municipal bills and services online</p>
+                            <a href="services/billing.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Pay Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-phone quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Contact Us</h3>
+                            <p class="quick-link-description">Get in touch with Makhado Municipality</p>
+                            <a href="contact.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-newspaper-o quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">News & Events</h3>
+                            <p class="quick-link-description">Stay updated with the latest news and events</p>
+                            <a href="news.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Read News</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-download quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Documents</h3>
+                            <p class="quick-link-description">Download forms, policies and publications</p>
+                            <a href="documents.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-graduation-cap quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Learnerships</h3>
+                            <p class="quick-link-description">Explore learnership and internship opportunities</p>
+                            <a href="vacancies/learnerships.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card quick-link-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fa fa-map-marker quick-link-icon" aria-hidden="true"></i>
+                            <h3 class="quick-link-title fables-main-text-color font-18">Tourism</h3>
+                            <p class="quick-link-description">Discover tourist attractions in Makhado</p>
+                            <a href="services/tourism.html" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 px-4 py-2 mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick Links Section End -->
 
     <!-- Our Mayor start -->
     <div class="fables-testimonial fables-after-overlay py-4 py-md-5 bg-rules mayor-section">
@@ -228,7 +357,7 @@
             </div>
         </div>
         <!-- Counter Section End-->
-         
+
         <div class="container">
             <div class="row overflow-hidden">
                 <div class="col-12 col-md-6">
@@ -401,6 +530,58 @@
         </div>
         <!--THE NEWS END-->
 
+        <!-- Chatbot Starts -->
+
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+        <script defer>
+          window.botpress.on('*', (event) => {
+            Toastify({ text: `Event: ${event.type}` }).showToast();
+          });
+      
+          window.botpress.on('webchat:ready', (conversationId) => {
+            Toastify({ text: 'Webchat Ready' }).showToast();
+          });
+      
+          window.botpress.on('webchat:opened', (conversationId) => {
+            Toastify({ text: 'Webchat Opened' }).showToast();
+          });
+      
+          window.botpress.on('webchat:closed', (conversationId) => {
+            Toastify({ text: `Webchat Closed` }).showToast();
+          });
+      
+          window.botpress.on('conversation', (conversationId) => {
+            Toastify({ text: `Conversation: ${conversationId}` }).showToast();
+          });
+      
+          window.botpress.on('message', (message) => {
+            Toastify({ text: `Message Received: ${message.id}` }).showToast();
+          });
+      
+          window.botpress.on('messageSent', (message) => {
+            Toastify({ text: `Message Sent: ${message}` }).showToast();
+          });
+      
+          window.botpress.on('error', (error) => {
+            Toastify({ text: `Error: ${error}` }).showToast();
+          });
+      
+          window.botpress.on('webchatVisibility', (visibility) => {
+            Toastify({ text: `Visibility: ${visibility}` }).showToast();
+          });
+      
+          window.botpress.on('webchatConfig', (visibility) => {
+            Toastify({ text: 'Webchat Config' }).showToast();
+          });
+      
+          window.botpress.on('customEvent', (anyEvent) => {
+            Toastify({ text: 'Received a custom event' }).showToast();
+          });
+        </script>
+        <script src="https://mediafiles.botpress.cloud/26a83f89-ace1-4045-92ba-95b836f75669/webchat/v2/config.js"
+          defer></script>
+        <!-- Chatbot Ends -->
 
         <!-- /End page content -->
 
