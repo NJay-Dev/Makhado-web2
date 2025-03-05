@@ -2949,32 +2949,12 @@ ul {
 li.drop-down ul > li > a:hover{
 	background-color:#2C3E4F;
 	color:inherit;
+    transition: color 0.6s linear, background 0.2s linear;
 }
-.exo-menu i {
-  float: left;
-  font-size: 18px;
-  margin-right: 6px;
-  line-height: 20px !important;
-}
-li.drop-down,
-.flyout-right,
-.flyout-left{position:relative;}
-li.drop-down:before {
-  content: "\f103";
-  color: #fff;
-  font-family: FontAwesome;
-  font-style: normal;
-  display: inline;
-  position: absolute;
-  right: 6px;
-  top: 20px;
-  font-size: 14px;
-  display: none;
-}
-li.drop-down>ul{
+li.drop-down > ul{
 	left: 0px;
 	min-width: 230px;
-
+    transition: all 0.6s ease-in-out;
 }
 .drop-down-ul{display:none;}
 .flyout-right>ul,
@@ -2983,6 +2963,7 @@ li.drop-down>ul{
   min-width: 230px;
   display: none;
   border-left: 1px solid #365670;
+  transition: all 0.6s ease-in-out;
   }
 
 li.drop-down>ul>li>a,

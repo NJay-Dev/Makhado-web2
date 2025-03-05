@@ -394,3 +394,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 tickerWidth = ticker.offsetWidth;
             });
         });
+
+        async function loadHTML(id, file) {
+            let element = document.getElementById(id);
+            if (element) {
+                let response = await fetch(file);
+                if (response.ok) {
+                    element.innerHTML = await response.text();
+                } else {
+                    console.error(`Error loading ${file}: ${response.statusText}`);
+                }
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            loadHTML("header", "header.html");
+            loadHTML("footer", "footer.html");
+        });
+        
