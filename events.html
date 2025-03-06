@@ -2,38 +2,535 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Events Calendar">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
     <title>Events - Makhado Local Municipality</title>
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/custom/css/style.css">
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+    <!-- Calendar CSS -->
+    <style>
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar th, .calendar td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .calendar th {
+            background-color: #f2f2f2;
+        }
+        .calendar .today {
+            background-color: #e6f7ff;
+            font-weight: bold;
+        }
+        .calendar .has-event {
+            background-color: #ffe6e6;
+            cursor: pointer;
+            position: relative;
+        }
+        .calendar .has-event:hover {
+            background-color: #ffcccc;
+        }
+        .calendar .has-event::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #ff4d4d;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .event-preview {
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .event-preview:hover {
+            transform: translateY(-5px);
+        }
+        .event-date {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .event-date .month {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #666;
+        }
+        .event-date .day {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        .event-date .year {
+            font-size: 14px;
+            margin: 0;
+            color: #666;
+        }
+        .event-details {
+            padding: 15px;
+        }
+        .event-details h5 {
+            margin-top: 0;
+        }
+        .event-details .event-meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .event-details .event-meta i {
+            margin-right: 5px;
+        }
+        .month-selector {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- TOP HEADER STARTS -->
     <header>
-        <!-- Include header content here -->
         <div id="header"></div>
     </header>
-    <main>
-        <h1>Events</h1>
-        <!-- Content for Events page -->
-    </main>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">EVENTS CALENDAR</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">EVENTS CALENDAR</h1>
+                <p class="font-15 mb-4">
+                    Stay informed about upcoming events, meetings, and activities organized by the Makhado Local Municipality. 
+                    Our events calendar provides details on public meetings, community events, council sessions, and other 
+                    important municipal activities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Calendar Section Start -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">Calendar</h2>
+                        
+                        <!-- Month Selector -->
+                        <div class="month-selector d-flex justify-content-between align-items-center mb-4">
+                            <button class="btn btn-outline-secondary" onclick="previousMonth()">
+                                <i class="fa fa-chevron-left"></i> Previous
+                            </button>
+                            <h3 id="currentMonthYear" class="m-0">April 2024</h3>
+                            <button class="btn btn-outline-secondary" onclick="nextMonth()">
+                                Next <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Calendar Table -->
+                        <div class="table-responsive">
+                            <table class="calendar">
+                                <thead>
+                                    <tr>
+                                        <th>Sun</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="calendarBody">
+                                    <!-- Calendar will be generated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calendar Section End -->
+
+        <!-- Upcoming Events Section Start -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fables-second-text-color font-24 mb-4">Upcoming Events</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Event 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm event-preview">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <div class="event-date">
+                                <p class="month">Apr</p>
+                                <p class="day">15</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="event-details">
+                                <h5 class="fables-second-text-color">Council Meeting</h5>
+                                <div class="event-meta">
+                                    <p><i class="fa fa-clock-o"></i> 10:00 AM - 1:00 PM</p>
+                                    <p><i class="fa fa-map-marker"></i> Council Chambers</p>
+                                </div>
+                                <p class="small mb-2">Monthly council meeting to discuss municipal matters and service delivery issues.</p>
+                                <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm event-preview">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <div class="event-date">
+                                <p class="month">Apr</p>
+                                <p class="day">20</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="event-details">
+                                <h5 class="fables-second-text-color">Community Cleanup Day</h5>
+                                <div class="event-meta">
+                                    <p><i class="fa fa-clock-o"></i> 8:00 AM - 12:00 PM</p>
+                                    <p><i class="fa fa-map-marker"></i> Town Center</p>
+                                </div>
+                                <p class="small mb-2">Join us for a community cleanup initiative to keep our town clean and beautiful.</p>
+                                <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm event-preview">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <div class="event-date">
+                                <p class="month">Apr</p>
+                                <p class="day">25</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="event-details">
+                                <h5 class="fables-second-text-color">Public Participation Meeting</h5>
+                                <div class="event-meta">
+                                    <p><i class="fa fa-clock-o"></i> 5:30 PM - 7:30 PM</p>
+                                    <p><i class="fa fa-map-marker"></i> Community Hall</p>
+                                </div>
+                                <p class="small mb-2">Public meeting to discuss the upcoming infrastructure development projects.</p>
+                                <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm event-preview">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <div class="event-date">
+                                <p class="month">May</p>
+                                <p class="day">5</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="event-details">
+                                <h5 class="fables-second-text-color">Youth Development Workshop</h5>
+                                <div class="event-meta">
+                                    <p><i class="fa fa-clock-o"></i> 9:00 AM - 3:00 PM</p>
+                                    <p><i class="fa fa-map-marker"></i> Youth Center</p>
+                                </div>
+                                <p class="small mb-2">Workshop focusing on entrepreneurship and career development for young people.</p>
+                                <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm event-preview">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <div class="event-date">
+                                <p class="month">May</p>
+                                <p class="day">12</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="event-details">
+                                <h5 class="fables-second-text-color">Budget Information Session</h5>
+                                <div class="event-meta">
+                                    <p><i class="fa fa-clock-o"></i> 10:00 AM - 12:00 PM</p>
+                                    <p><i class="fa fa-map-marker"></i> Municipal Auditorium</p>
+                                </div>
+                                <p class="small mb-2">Information session on the municipal budget for the 2024/2025 financial year.</p>
+                                <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm event-preview">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <div class="event-date">
+                                <p class="month">May</p>
+                                <p class="day">20</p>
+                                <p class="year">2024</p>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="event-details">
+                                <h5 class="fables-second-text-color">Water Conservation Awareness</h5>
+                                <div class="event-meta">
+                                    <p><i class="fa fa-clock-o"></i> 2:00 PM - 4:00 PM</p>
+                                    <p><i class="fa fa-map-marker"></i> Community Center</p>
+                                </div>
+                                <p class="small mb-2">Educational event on water conservation techniques and importance.</p>
+                                <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Upcoming Events Section End -->
+
+        <!-- View All Events Button -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <a href="#" class="btn btn-primary">View All Events</a>
+            </div>
+        </div>
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
     <footer>
-        <!-- Include footer content here -->
         <div id="footer"></div>
     </footer>
+    <!-- /End Footer-->
+
     <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
     <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
     <script src="assets/vendor/popper/popper.min.js"></script>
-    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
     <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
-    <script src="assets/vendor/timeline/timeline.js"></script>
-    <script src="assets/vendor/timeline/modernizr.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
     <script src="assets/custom/js/custom.js"></script>
+
+    <!-- Calendar JavaScript -->
+    <script>
+        // Current date
+        let currentDate = new Date();
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
+
+        // Events data (sample data)
+        const events = [
+            { date: new Date(2024, 3, 15), title: 'Council Meeting' },
+            { date: new Date(2024, 3, 20), title: 'Community Cleanup Day' },
+            { date: new Date(2024, 3, 25), title: 'Public Participation Meeting' },
+            { date: new Date(2024, 4, 5), title: 'Youth Development Workshop' },
+            { date: new Date(2024, 4, 12), title: 'Budget Information Session' },
+            { date: new Date(2024, 4, 20), title: 'Water Conservation Awareness' }
+        ];
+
+        // Initialize calendar
+        document.addEventListener('DOMContentLoaded', function() {
+            generateCalendar(currentMonth, currentYear);
+        });
+
+        // Generate the calendar
+        function generateCalendar(month, year) {
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            
+            // Update month and year display
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            document.getElementById('currentMonthYear').textContent = `${monthNames[month]} ${year}`;
+            
+            // Clear previous calendar
+            const calendarBody = document.getElementById('calendarBody');
+            calendarBody.innerHTML = '';
+            
+            // Create calendar rows and cells
+            let date = 1;
+            for (let i = 0; i < 6; i++) {
+                // Create a table row
+                const row = document.createElement('tr');
+                
+                // Create cells for each day of the week
+                for (let j = 0; j < 7; j++) {
+                    const cell = document.createElement('td');
+                    
+                    if (i === 0 && j < firstDay) {
+                        // Empty cells before the first day of the month
+                        cell.textContent = '';
+                    } else if (date > daysInMonth) {
+                        // Empty cells after the last day of the month
+                        cell.textContent = '';
+                    } else {
+                        // Cells with dates
+                        cell.textContent = date;
+                        
+                        // Check if this date has an event
+                        const eventDate = new Date(year, month, date);
+                        const hasEvent = events.some(event => 
+                            event.date.getDate() === eventDate.getDate() && 
+                            event.date.getMonth() === eventDate.getMonth() && 
+                            event.date.getFullYear() === eventDate.getFullYear()
+                        );
+                        
+                        if (hasEvent) {
+                            cell.classList.add('has-event');
+                            cell.setAttribute('data-date', `${year}-${month+1}-${date}`);
+                            cell.addEventListener('click', function() {
+                                showEventDetails(this.getAttribute('data-date'));
+                            });
+                        }
+                        
+                        // Highlight today's date
+                        if (date === new Date().getDate() && month === new Date().getMonth() && year === new Date().getFullYear()) {
+                            cell.classList.add('today');
+                        }
+                        
+                        date++;
+                    }
+                    
+                    row.appendChild(cell);
+                }
+                
+                calendarBody.appendChild(row);
+                
+                // Stop creating rows if we've used all days of the month
+                if (date > daysInMonth) {
+                    break;
+                }
+            }
+        }
+
+        // Navigate to previous month
+        function previousMonth() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        // Navigate to next month
+        function nextMonth() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        // Show event details (placeholder function)
+        function showEventDetails(dateString) {
+            const [year, month, day] = dateString.split('-').map(Number);
+            const eventDate = new Date(year, month-1, day);
+            
+            // Find events on this date
+            const eventsOnDate = events.filter(event => 
+                event.date.getDate() === eventDate.getDate() && 
+                event.date.getMonth() === eventDate.getMonth() && 
+                event.date.getFullYear() === eventDate.getFullYear()
+            );
+            
+            if (eventsOnDate.length > 0) {
+                alert(`Events on ${month}/${day}/${year}:\n${eventsOnDate.map(e => e.title).join('\n')}`);
+            }
+        }
+    </script>
 </body>
 
 </html>

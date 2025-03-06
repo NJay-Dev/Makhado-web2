@@ -2,38 +2,276 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Municipal Notices">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
     <title>Notices - Makhado Local Municipality</title>
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/custom/css/style.css">
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- TOP HEADER STARTS -->
     <header>
-        <!-- Include header content here -->
         <div id="header"></div>
     </header>
-    <main>
-        <h1>Notices</h1>
-        <!-- Content for Notices page -->
-    </main>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">MUNICIPAL NOTICES</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">MUNICIPAL NOTICES</h1>
+                <p class="font-15 mb-4">
+                    The Makhado Local Municipality publishes official notices to inform the public about important
+                    matters, regulations, by-laws, and other official communications. These notices are available for
+                    download in PDF format.
+                </p>
+            </div>
+        </div>
+
+        <!-- Notices Filter Start -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">Filter Notices</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="yearSelect">Year:</label>
+                                <select class="form-control" id="yearSelect" onchange="filterNotices()">
+                                    <option value="All">All Years</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="categorySelect">Category:</label>
+                                <select class="form-control" id="categorySelect" onchange="filterNotices()">
+                                    <option value="All">All Categories</option>
+                                    <option value="Tenders">Tenders</option>
+                                    <option value="Public Notices">Public Notices</option>
+                                    <option value="By-Laws">By-Laws</option>
+                                    <option value="Service Delivery">Service Delivery</option>
+                                    <option value="Vacancies">Vacancies</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="searchInput">Search:</label>
+                                <input type="text" class="form-control" id="searchInput" placeholder="Search notices..."
+                                    onkeyup="filterNotices()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Notices Filter End -->
+
+        <!-- Notices List Start -->
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="fables-second-background-color text-white">
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Notice Title</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Reference</th>
+                                <th scope="col">Download</th>
+                            </tr>
+                        </thead>
+                        <tbody id="noticesTable">
+                            <!-- 2024 Notices -->
+                            <tr data-year="2024" data-category="Tenders">
+                                <td>April 10, 2024</td>
+                                <td>Invitation to Tender: Road Maintenance Project</td>
+                                <td>Tenders</td>
+                                <td>MLM/2024/T001</td>
+                                <td><a href="404.html" class="btn btn-primary btn-sm"><i class="fa fa-download"></i>
+                                        PDF</a></td>
+                            </tr>
+                            </tr>
+                            <tr data-year="2024" data-category="Public Notices">
+                                <td>April 5, 2024</td>
+                                <td>Water Supply Interruption Notice: Scheduled Maintenance</td>
+                                <td>Public Notices</td>
+                                <td>MLM/2024/PN005</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2024" data-category="By-Laws">
+                                <td>March 20, 2024</td>
+                                <td>Revised Waste Management By-Law</td>
+                                <td>By-Laws</td>
+                                <td>MLM/2024/BL002</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2024" data-category="Service Delivery">
+                                <td>March 15, 2024</td>
+                                <td>Electricity Tariff Increase Notice</td>
+                                <td>Service Delivery</td>
+                                <td>MLM/2024/SD003</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2024" data-category="Vacancies">
+                                <td>February 28, 2024</td>
+                                <td>Job Vacancy: Administrative Assistant</td>
+                                <td>Vacancies</td>
+                                <td>MLM/2024/V001</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <!-- Random Notices -->
+                            <tr data-year="2023" data-category="Tenders">
+                                <td>December 15, 2023</td>
+                                <td>Invitation to Tender: Park Renovation Project</td>
+                                <td>Tenders</td>
+                                <td>MLM/2023/T002</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2023" data-category="Public Notices">
+                                <td>November 10, 2023</td>
+                                <td>Public Notice: Road Closure for Parade</td>
+                                <td>Public Notices</td>
+                                <td>MLM/2023/PN010</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2022" data-category="By-Laws">
+                                <td>October 5, 2022</td>
+                                <td>New Parking Regulations By-Law</td>
+                                <td>By-Laws</td>
+                                <td>MLM/2022/BL003</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2021" data-category="Service Delivery">
+                                <td>September 20, 2021</td>
+                                <td>Notice: Water Supply Disruption</td>
+                                <td>Service Delivery</td>
+                                <td>MLM/2021/SD004</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                            <tr data-year="2020" data-category="Vacancies">
+                                <td>August 15, 2020</td>
+                                <td>Job Vacancy: IT Support Technician</td>
+                                <td>Vacancies</td>
+                                <td>MLM/2020/V002</td>
+                                <td><a href="404.html"
+                                        class="btn btn-primary btn-sm"><i class="fa fa-download"></i> PDF</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Notices List End -->
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
     <footer>
-        <!-- Include footer content here -->
         <div id="footer"></div>
     </footer>
+    <!-- /End Footer-->
+
     <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
     <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
     <script src="assets/vendor/popper/popper.min.js"></script>
-    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
     <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
-    <script src="assets/vendor/timeline/timeline.js"></script>
-    <script src="assets/vendor/timeline/modernizr.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
     <script src="assets/custom/js/custom.js"></script>
+
+    <!-- Filter Notices JavaScript -->
+    <script>
+        function filterNotices() {
+            const year = document.getElementById('yearSelect').value;
+            const category = document.getElementById('categorySelect').value;
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const rows = document.querySelectorAll('#noticesTable tr');
+
+            rows.forEach(row => {
+                const rowYear = row.getAttribute('data-year');
+                const rowCategory = row.getAttribute('data-category');
+                const rowText = row.textContent.toLowerCase();
+
+                const matchesYear = (year === 'All' || rowYear === year);
+                const matchesCategory = (category === 'All' || rowCategory === category);
+                const matchesSearch = rowText.includes(search);
+
+                if (matchesYear && matchesCategory && matchesSearch) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
