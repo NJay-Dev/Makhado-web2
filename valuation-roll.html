@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Valuation Roll">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
+    <title>Valuation Roll - Makhado Local Municipality</title>
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TOP HEADER STARTS -->
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">VALUATION ROLL</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">VALUATION ROLL</h1>
+                <p class="font-15 mb-4">
+                    The Makhado Local Municipality provides access to the General Valuation Roll and Supplementary
+                    Valuation Rolls for transparency and public awareness. The Valuation Roll is a public document that
+                    lists all properties within the municipal boundaries, their market values, categories, and other
+                    relevant information.
+                </p>
+                <p class="font-15 mb-5">
+                    Property owners and stakeholders are encouraged to review these documents to ensure the accuracy of
+                    property valuations, which form the basis for property rates calculations. If you believe your
+                    property has been incorrectly valued, you may lodge an objection within the specified period using
+                    the appropriate objection forms provided below.
+                </p>
+            </div>
+        </div>
+
+        <!-- Valuation Roll Table Starts-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">Valuation Roll Documents</h2>
+                        <div class="form-group">
+                            <label for="yearSelect">Select Period:</label>
+                            <select class="form-control" id="yearSelect" onchange="filterDocuments()">
+                                <option value="2023/2028">2023/2028</option>
+                                <option value="2018/2023">2018/2023</option>
+                                <option value="2019/2020">2019/2020</option>
+                                <option value="2018/2019">2018/2019</option>
+                            </select>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="fables-second-background-color text-white">
+                                    <tr>
+                                        <th scope="col">Period</th>
+                                        <th scope="col">Document Name</th>
+                                        <th scope="col">Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="documentsTable">
+                                    <!-- 2023/2028 Documents -->
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>General Valuation Roll 2023-2028 Volume 1 (No Owner Names)</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/GVR 2023-2028 Vol 1(noNames).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>General Valuation Roll 2023-2028 Volume 2 (No Owner Names)</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/GVR2023-2028 Vol 2(noNames).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Supplementary Valuation Roll 01 Binder Volume 1 (No Owners)</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Binder Makhado SV01 Volume 1 (No Owners).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Form A - Objection for Residential Properties (2023-2026)</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Form A Objection for properties of Residential Purposes 2023-2026.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Form B - Objection for Non-Residential Properties (2023-2026)</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Form B Objection for properties other than Residential or Agricultural 2023-2026.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Form C - Objection for Agricultural Holdings or Farms</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Form C Objection for Agricultural Holdings or Farms.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Supplementary Valuation Roll 01 - Objection Form A</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Makhado Objection Form A (SV01).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Supplementary Valuation Roll 01 - Objection Form B</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Makhado Objection Form B (SV01).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Supplementary Valuation Roll 01 - Objection Form C</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Makhado Objection Form C (SV01).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2028">
+                                        <td>2023/2028</td>
+                                        <td>Valuation Roll Notice No 18 of 2023 (English)</td>
+                                        <td><a href="assets/documents/valuation-roll/2023_2028/Valuation Roll Notice No 18 of 2023 (English).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+
+                                    <!-- 2018/2023 Documents -->
+                                    <tr data-year="2018/2023">
+                                        <td>2018/2023</td>
+                                        <td>General Valuation Roll 2018-2023 (Certified)</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2023/GVR 2018-2023 Certified.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2023">
+                                        <td>2018/2023</td>
+                                        <td>7th Supplementary Valuation Roll (2021)</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2023/7th Supplementary Valuation Roll, 2021.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2023">
+                                        <td>2018/2023</td>
+                                        <td>Form B - Objection Form for GVR 2018-2023</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2023/Form B objection form -GVR 2018-2023.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2023">
+                                        <td>2018/2023</td>
+                                        <td>Form C - Objection Form for GVR 2018-2023</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2023/Form C objection form -GVR 2018-2023.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2023">
+                                        <td>2018/2023</td>
+                                        <td>GVR 2018-2023 Public Notice (English)</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2023/GVR 2018-2023 ENGLISH NOTICE.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2023">
+                                        <td>2018/2023</td>
+                                        <td>Valuation Roll Notice 2018-2023 (Afrikaans)</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2023/Valuation Roll Notice Afrikaans (2018-2023).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+
+                                    <!-- 2019/2020 Documents -->
+                                    <tr data-year="2019/2020">
+                                        <td>2019/2020</td>
+                                        <td>Supplementary Valuation Roll 6</td>
+                                        <td><a href="assets/documents/valuation-roll/2019_2020/supplementary valuation roll 6.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/2020">
+                                        <td>2019/2020</td>
+                                        <td>Supplementary Valuation Roll 6 - Public Notice (English & Afrikaans)</td>
+                                        <td><a href="assets/documents/valuation-roll/2019_2020/sv 6 public noticeeng afrik.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+
+                                    <!-- 2018/2019 Documents -->
+                                    <tr data-year="2018/2019">
+                                        <td>2018/2019</td>
+                                        <td>Supplementary Valuation Roll 1 (Geospatial)</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2019/Supplementary Valuation Roll 1-geospatial.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2019">
+                                        <td>2018/2019</td>
+                                        <td>Supplementary Valuation Roll 2</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2019/Suppelmentary Valuation Roll 2.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2019">
+                                        <td>2018/2019</td>
+                                        <td>Supplementary Valuation Roll 3</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2019/Supplementary Valuation 3_.pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2019">
+                                        <td>2018/2019</td>
+                                        <td>Notice No 40 of 2019 - Supplementary Valuation Roll 3 (2019)</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2019/NOTICE NO 40 OF 2019 -SVO3(2019).pdf"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2018/2019">
+                                        <td>2018/2019</td>
+                                        <td>Objection Forms A, B & C</td>
+                                        <td><a href="assets/documents/valuation-roll/2018_2019/OBJECTION FORMS A_B_C.PDF"
+                                                class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Valuation Roll Table End-->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">About the Valuation Roll</h2>
+                        <p class="font-15 mb-3">
+                            The Municipal Property Rates Act (Act 6 of 2004) requires municipalities to prepare a
+                            General
+                            Valuation Roll of all properties within their boundaries at least once every five years. The
+                            Valuation Roll is used to determine property rates, which are a significant source of
+                            revenue
+                            for the municipality.
+                        </p>
+                        <p class="font-15 mb-3">
+                            <strong>General Valuation Roll:</strong> This is the main valuation roll that contains all
+                            properties within the municipal area and their market values as determined by professional
+                            valuers.
+                        </p>
+                        <p class="font-15 mb-3">
+                            <strong>Supplementary Valuation Roll:</strong> These are updates to the General Valuation
+                            Roll that account for changes such as new developments, subdivisions, consolidations, and
+                            changes in property use or zoning.
+                        </p>
+                        <p class="font-15 mb-3">
+                            <strong>Objection Process:</strong> Property owners who disagree with the valuation of their
+                            property can lodge an objection within the specified period (usually 30 days from the date
+                            of
+                            notice). Different objection forms are provided for different property types:
+                        </p>
+                        <ul class="font-15 mb-3">
+                            <li><strong>Form A:</strong> For residential properties</li>
+                            <li><strong>Form B:</strong> For properties other than residential or agricultural</li>
+                            <li><strong>Form C:</strong> For agricultural holdings or farms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function filterDocuments() {
+                var selectedYear = document.getElementById('yearSelect').value;
+                var rows = document.querySelectorAll('#documentsTable tr');
+
+                rows.forEach(function (row) {
+                    var rowYear = row.getAttribute('data-year');
+                    if (rowYear === selectedYear) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
+
+            // Initialize the table to show the first year by default
+            document.addEventListener('DOMContentLoaded', function () {
+                filterDocuments();
+            });
+        </script>
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <!-- /End Footer-->
+
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+    <script src="assets/custom/js/custom.js"></script>
+</body>
+
+</html>

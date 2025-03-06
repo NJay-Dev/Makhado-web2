@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Municipal Tariffs">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
+    <title>Tariffs - Makhado Local Municipality</title>
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TOP HEADER STARTS -->
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">MUNICIPAL TARIFFS</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">MUNICIPAL TARIFFS</h1>
+                <p class="font-15 mb-4">
+                    The Makhado Local Municipality provides access to approved municipal tariffs for transparency and
+                    public awareness. These documents outline the rates and fees charged for various municipal services
+                    and are updated annually as part of the budget process.
+                </p>
+                <p class="font-15 mb-5">
+                    Residents and businesses can access current and historical tariff information to understand the
+                    charges applied to municipal services such as property rates, water, electricity, waste management,
+                    and other municipal services.
+                </p>
+            </div>
+        </div>
+
+        <!-- Tariffs Table Starts-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">Tariff Documents</h2>
+                        <div class="form-group">
+                            <label for="yearSelect">Select Financial Year:</label>
+                            <select class="form-control" id="yearSelect" onchange="filterDocuments()">
+                                <option value="2024/2025">2024/2025</option>
+                                <option value="2023/2024">2023/2024</option>
+                                <option value="2022/2023">2022/2023</option>
+                                <option value="2021/2022">2021/2022</option>
+                                <option value="2020/2021">2020/2021</option>
+                                <option value="2019/2020">2019/2020</option>
+                                <option value="Older">Older</option>
+                            </select>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="fables-second-background-color text-white">
+                                    <tr>
+                                        <th scope="col">Financial Year</th>
+                                        <th scope="col">Document Name</th>
+                                        <th scope="col">Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="documentsTable">
+                                    <!-- 2024/2025 Documents -->
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Swimming Pool Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 SwimmingPool Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Tea Garden Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 TeaGarden Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Town Planning Fees</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Town Planning Fees.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Traffic Fees</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Traffic Fees.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Various Charges</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Various Charges.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Information Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Information Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Lease Of Tent Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Lease Of Tent Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Library Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Library Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Miscellaneous Charges</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Miscellaneous charges.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>New Connection and Upgrade</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 New Connection and Upgrade.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Pamphlets Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 Pamphlets Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Pound Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 PoundTariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Rabali Stadium Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 RabaliStadiumTariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Refuse Removal Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 RefuseRemoval Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Show Hall Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 ShowHall Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/2025">
+                                        <td>2024/2025</td>
+                                        <td>Street Trading Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2024_25/Notice 2024 StreetTrading Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2023/2024 Documents -->
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Activity Room Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Activity Room Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Aerodrome Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Aerodrome Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Annual Show Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Annual Show Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Assessment Property Rates</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Assessment Property Rates.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Beer Garden Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 BeerGarden.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Building Plans Bylaw</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 BuildingPlans Bylaw.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Caravan Park Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Caravan Park Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Cemetery Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Cemetary Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Electricity Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Electricity Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Hawkers Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 Hawkers Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/2024">
+                                        <td>2023/2024</td>
+                                        <td>Inflammable Liquids Tariffs</td>
+                                        <td><a href="assets/documents/tariffs/2023_24/Notice 2023 InflammableLiquids Tariffs.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2022/2023 Documents -->
+                                    <tr data-year="2022/2023">
+                                        <td>2022/2023</td>
+                                        <td>Approved Tariffs 2022/2023</td>
+                                        <td><a href="assets/documents/tariffs/2022_23/Approved_Tariffs_2022_2023.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2021/2022 Documents -->
+                                    <tr data-year="2021/2022">
+                                        <td>2021/2022</td>
+                                        <td>Approved Tariffs 2021/2022</td>
+                                        <td><a href="assets/documents/tariffs/2021_22/Approved_Tariffs_2021_2022.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2020/2021 Documents -->
+                                    <tr data-year="2020/2021">
+                                        <td>2020/2021</td>
+                                        <td>Approved Tariffs 2020/2021</td>
+                                        <td><a href="assets/documents/tariffs/2020_21/Approved_Tariffs_2020_2021.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2019/2020 Documents -->
+                                    <tr data-year="2019/2020">
+                                        <td>2019/2020</td>
+                                        <td>Approved Tariffs 2019/2020</td>
+                                        <td><a href="assets/documents/tariffs/2019_20/Approved_Tariffs_2019_2020.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- Older Documents -->
+                                    <tr data-year="Older">
+                                        <td>2018/2019</td>
+                                        <td>Approved Tariffs 2018/2019</td>
+                                        <td><a href="assets/documents/tariffs/older/Approved_Tariffs_2018_2019.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="Older">
+                                        <td>2017/2018</td>
+                                        <td>Approved Tariffs 2017/2018</td>
+                                        <td><a href="assets/documents/tariffs/older/Approved_Tariffs_2017_2018.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tariffs Table End-->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">About Municipal Tariffs</h2>
+                        <p class="font-15 mb-3">
+                            Municipal tariffs are the fees charged by the municipality for various services provided to
+                            residents and businesses. These tariffs are reviewed and updated annually as part of the
+                            municipal budget process in accordance with the Municipal Finance Management Act (MFMA).
+                        </p>
+                        <p class="font-15 mb-3">
+                            <strong>Types of Municipal Tariffs:</strong>
+                        </p>
+                        <ul class="font-15 mb-3">
+                            <li><strong>Property Rates:</strong> Taxes levied on the value of property within the
+                                municipal area.</li>
+                            <li><strong>Utility Services:</strong> Charges for electricity, water, sanitation, and refuse removal.</li>
+                            <li><strong>Community Facilities:</strong> Fees for the use of municipal facilities such as swimming pools, 
+                                libraries, halls, stadiums, and caravan parks.</li>
+                            <li><strong>Administrative Services:</strong> Fees for services such as building plan approvals, 
+                                town planning applications, and information services.</li>
+                            <li><strong>Business Licenses:</strong> Fees for various business licenses including hawkers, 
+                                street trading, and inflammable liquids.</li>
+                        </ul>
+                        <p class="font-15 mb-3">
+                            <strong>Tariff Policy:</strong> The municipality's tariff policy outlines the principles and
+                            guidelines for determining tariffs, including cost recovery, subsidization for indigent
+                            households, and the promotion of efficient resource use.
+                        </p>
+                        <p class="font-15 mb-3">
+                            For any queries regarding municipal tariffs, please contact the Finance Department at the
+                            Makhado Local Municipality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function filterDocuments() {
+                var selectedYear = document.getElementById('yearSelect').value;
+                var rows = document.querySelectorAll('#documentsTable tr');
+                
+                rows.forEach(function(row) {
+                    var rowYear = row.getAttribute('data-year');
+                    if (rowYear === selectedYear) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
+
+            // Initialize the table to show the first year by default
+            document.addEventListener('DOMContentLoaded', function() {
+                filterDocuments();
+            });
+        </script>
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <!-- /End Footer-->
+
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+    <script src="assets/custom/js/custom.js"></script>
+</body>
+
+</html>

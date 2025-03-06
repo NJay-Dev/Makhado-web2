@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Annual Reports">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
+    <title>Annual Reports - Makhado Local Municipality</title>
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TOP HEADER STARTS -->
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">ANNUAL REPORTS</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">ANNUAL REPORTS</h1>
+                <p class="font-15 mb-4">
+                    The Makhado Local Municipality provides access to annual reports for transparency and public
+                    awareness.
+                    These reports offer insights into the municipality's activities, financial status, and other
+                    important information.
+                </p>
+                <p class="font-15 mb-5">
+                    Residents and stakeholders are encouraged to review these reports to stay informed about the
+                    municipality's operations and performance.
+                </p>
+            </div>
+        </div>
+        <!-- Reports Table Starts-->
+        <div class="row"></div>
+            <div class="col-12">
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body">
+                <h2 class="fables-second-text-color font-20 mb-4">Annual Reports</h2>
+                <div class="form-group">
+                    <label for="yearSelect">Select Year:</label>
+                    <select class="form-control" id="yearSelect" onchange="filterReports()">
+                    <option value="2016/17">2016/17</option>
+                    <option value="2017/18">2017/18</option>
+                    <option value="2018/19">2018/19</option>
+                    <option value="2019/20">2019/20</option>
+                    <option value="2020/21">2020/21</option>
+                    <option value="2021/22">2021/22</option>
+                    <option value="2022/23">2022/23</option>
+                    </select>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                    <thead class="fables-second-background-color text-white">
+                        <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Report Name</th>
+                        <th scope="col">Download</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reportsTable">
+                        <tr data-year="2016/17">
+                        <td>2016/17</td>
+                        <td>DRAFT ANNUAL REPORT 2016_17 FY</td>
+                        <td><a href="assets/documents/annual-reports/2016_17/DRAFT ANNUAL REPORT 2016_17 FY.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2016/17">
+                        <td>2016/17</td>
+                        <td>Notice Public Comments on Draft Annual Report 2016_17 FY</td>
+                        <td><a href="assets/documents/annual-reports/2016_17/Notice Public Comments on Draft Annual Report 2016_17 FY.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2017/18">
+                        <td>2017/18</td>
+                        <td>Final Draft Arial Annual Report</td>
+                        <td><a href="assets/documents/annual-reports/2017_18/Final Draft Arial Annual Report.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>Audit report - Makhado 18-19</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/Audit report - Makhado 18-19.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>Audited Annual Financial Statements 30 June 2019</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/Audited Annual Financial Statements 30 June 2019.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>Draft Annual Report Makhado 18_19 Financial Year</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/Draft Annual Report Makhado 18_19 Financial Year20200214.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>FINAL ANNUAL REPORT</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/FINAL ANNUAL REPORT.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>Final Draft Arial Annual Report</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/Final Draft Arial Annual Report.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>LAST ADJUSTED FINAL ANNUAL PERFOMANCE REPORT 2018-19</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/LAST ADJUSTED FINAL ANNUAL PERFOMANCE REPORT 2018-19.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>Oversight Report 2018-2019</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/Oversight Report 2018-2019(18March2020).pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2018/19">
+                        <td>2018/19</td>
+                        <td>Public Participation Hearing MPAC</td>
+                        <td><a href="assets/documents/annual-reports/2018_19/Public Participation Hearing MPAC20200309.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2019/20">
+                        <td>2019/20</td>
+                        <td>Adjusted Annual Performance Report (Final Report)</td>
+                        <td><a href="assets/documents/annual-reports/2019_20/Adjusted Annual Performance Report (Final Report)05052021.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2019/20"></tr>
+                        <td>2019/20</td>
+                        <td>DRAFT ANNUAL REPORT FOR 2019.2020 FINANCIAL YEAR</td>
+                        <td><a href="assets/documents/annual-reports/2019_20/DRAFT ANNUAL REPORT FOR 2019.2020 FINANCIAL YEAR05052021.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2019/20">
+                        <td>2019/20</td>
+                        <td>FINAL ANNUAL REPORT 2019.2020</td>
+                        <td><a href="assets/documents/annual-reports/2019_20/FINAL ANNUAL REPORT 2019.2020 060921.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2020/21">
+                        <td>2020/21</td>
+                        <td>Adjusted Annual Performance Report Makhado 2020-2021</td>
+                        <td><a href="assets/documents/annual-reports/2020_21/Adjusted Annual Performance Report Makhado 2020-2021.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2020/21">
+                        <td>2020/21</td>
+                        <td>ANNUAL FINANCIAL STATEMENTS 2020.21 FINANCIAL YEAR</td>
+                        <td><a href="assets/documents/annual-reports/2020_21/ANNUAL FINANCIAL STATEMENTS 2020.21 FINANCIAL YEAR.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2020/21">
+                        <td>2020/21</td>
+                        <td>DRAFT ANNUAL REPORT _2020-2021_FINANCIAL YEAR</td>
+                        <td><a href="assets/documents/annual-reports/2020_21/DRAFT ANNUAL REPORT _2020-2021_FINANCIAL YEAR.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2020/21">
+                        <td>2020/21</td>
+                        <td>FINAL 2020-2021_Annual_Report</td>
+                        <td><a href="assets/documents/annual-reports/2020_21/FINAL 2020-2021_Annual_Report.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2020/21">
+                        <td>2020/21</td>
+                        <td>Final Adjusted AFS 30 June 2021</td>
+                        <td><a href="assets/documents/annual-reports/2020_21/Final Adjusted AFS 30 June 2021.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2020/21">
+                        <td>2020/21</td>
+                        <td>SIGNED ANNUAL PERFORMANCE REPORT 2020-2021</td>
+                        <td><a href="assets/documents/annual-reports/2020_21/SIGNED ANNUAL PERFORMANCE REPORT 2020-2021060921.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2021/22">
+                        <td>2021/22</td>
+                        <td>2021-2022 MPAC OVERSIGHT REPORT AND FINAL ANNUAL REPORT</td>
+                        <td><a href="assets/documents/annual-reports/2021_22/2021-2022 MPAC OVERSIGHT REPORT AND FINAL ANNUAL REPORT.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2021/22">
+                        <td>2021/22</td>
+                        <td>FINAL ANNUAL REPORT 2021-2022</td>
+                        <td><a href="assets/documents/annual-reports/2021_22/FINAL ANNUAL REPORT 2021-2022.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2021/22">
+                        <td>2021/22</td>
+                        <td>MAKHADO MUNICIPALITY 2021-2022 FINAL ANNUAL REPORT</td>
+                        <td><a href="assets/documents/annual-reports/2021_22/MAKHADO MUNICIPALITY 2021-2022 FINAL ANNUAL REPORT.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2022/23">
+                        <td>2022/23</td>
+                        <td>Annex B - FINAL ANNUAL REPORT 2022-2023</td>
+                        <td><a href="assets/documents/annual-reports/2022_23/Annex B - FINAL ANNUAL REPORT 2022-202324.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2022/23">
+                        <td>2022/23</td>
+                        <td>DRAFT ANNUAL REPORT 2022-2023 FINAL VERSION OF DRAFT</td>
+                        <td><a href="assets/documents/annual-reports/2022_23/DRAFT ANNUAL REPORT 2022-2023 FINAL VERSION OF DRAFT.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2022/23">
+                        <td>2022/23</td>
+                        <td>Oversight Report 2022-2023</td>
+                        <td><a href="assets/documents/annual-reports/2022_23/Oversight Report 2022-20232506.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                        <tr data-year="2022/23">
+                        <td>2022/23</td>
+                        <td>Special Consent Application Form Clause 22</td>
+                        <td><a href="assets/documents/annual-reports/2022_23/Special Consent Application Form Clause 22.pdf" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fas fa-file-pdf mr-1"></i> Download</a></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Reports Table End-->
+
+        <script>
+            function filterReports() {
+            var selectedYear = document.getElementById('yearSelect').value;
+            var rows = document.querySelectorAll('#reportsTable tr');
+            rows.forEach(function(row) {
+                if (row.getAttribute('data-year') === selectedYear) {
+                row.style.display = '';
+                } else {
+                row.style.display = 'none';
+                }
+            });
+            }
+
+            // Initialize the table to show the first year by default
+            document.addEventListener('DOMContentLoaded', function() {
+            filterReports();
+            });
+        </script>
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <!-- /End Footer-->
+
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+    <script src="assets/custom/js/custom.js"></script>
+</body>
+
+</html></h2>

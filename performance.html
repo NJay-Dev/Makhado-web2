@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Performance Reports">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
+    <title>Performance Reports - Makhado Local Municipality</title>
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TOP HEADER STARTS -->
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">PERFORMANCE REPORTS</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">PERFORMANCE REPORTS</h1>
+                <p class="font-15 mb-4">
+                    The Makhado Local Municipality provides access to performance reports for transparency and public
+                    awareness. These reports offer insights into the municipality's performance, achievements, and other
+                    important information.
+                </p>
+                <p class="font-15 mb-5">
+                    Residents and stakeholders are encouraged to review these reports to stay informed about the
+                    municipality's performance and operations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Reports Table Starts-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-5">
+                    <div class="card-body">
+                        <h2 class="fables-second-text-color font-20 mb-4">Performance Reports</h2>
+                        <div class="form-group">
+                            <label for="yearSelect">Select Year:</label>
+                            <select class="form-control" id="yearSelect" onchange="filterReports()">
+                                <option value="2024/25">2024/25</option>
+                                <option value="2023/24">2023/24</option>
+                                <option value="2022/23">2022/23</option>
+                                <option value="2021/22">2021/22</option>
+                                <option value="2020/21">2020/21</option>
+                                <option value="2019/20">2019/20</option>
+                                <option value="Older">Older</option>
+                            </select>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="fables-second-background-color text-white">
+                                    <tr>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Report Name</th>
+                                        <th scope="col">Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="reportsTable">
+                                    <!-- 2024/25 Reports -->
+                                    <tr data-year="2024/25">
+                                        <td>2024/25</td>
+                                        <td>LUKHELI H PERSONAL DEVELOPMENT PLAN</td>
+                                        <td><a href="assets/documents/performance/2024_25/LUKHELI H PERSONAL DEVELOPMENT PLAN.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/25">
+                                        <td>2024/25</td>
+                                        <td>LUKHELI HJ FINANCIAL DISCLOSURE</td>
+                                        <td><a href="assets/documents/performance/2024_25/LUKHELI HJ FINANCIAL DISCLOSURE.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/25">
+                                        <td>2024/25</td>
+                                        <td>LUKHELI PERFOMANCE AGREEMENT</td>
+                                        <td><a href="assets/documents/performance/2024_25/LUKHELI PERFOMANCE AGREEMENT.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/25">
+                                        <td>2024/25</td>
+                                        <td>MAGUGA G FINANCIAL DISCLOSURE</td>
+                                        <td><a href="assets/documents/performance/2024_25/MAGUGA G FINANCIAL DISCLOSURE.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2024/25">
+                                        <td>2024/25</td>
+                                        <td>MAGUGA G PERFOMANCE</td>
+                                        <td><a href="assets/documents/performance/2024_25/MAGUGA G PERFOMANCE.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2023/24 Reports -->
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Development and Planning Financial Disclosure</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Development and Planning Financial Disclosure.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Development and Planning Performance Agreement</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Development and Planning Performance Agreement.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Development and Planning Performance Plan</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Development and Planning Performance Plan.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Development and Planning Personal Development</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Development and Planning Personal Development.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Technical Services Financial Disclosure</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Technical Services Financial Disclosure.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Technical Services Performance Agreement</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Technical Services Performance Agreement.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Technical Services Performance Plan</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Technical Services Performance Plan.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2023/24">
+                                        <td>2023/24</td>
+                                        <td>Director Technical Services Personal Development Plan</td>
+                                        <td><a href="assets/documents/performance/2023_24/Director Technical Services Personal Development Plan.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2022/23 Reports -->
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>CFO FINANCIAL DISCLOSURE 2022-23</td>
+                                        <td><a href="assets/documents/performance/2022_23/CFO FINANCIAL DISCLOSURE 2022-23.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>CFO PERFORMANCE AGREEMENT 2022-23</td>
+                                        <td><a href="assets/documents/performance/2022_23/CFO PERFORMANCE AGREEMENT 2022-23.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>CFP PERSONAL DEVELOPMENT PLAN 2022-23</td>
+                                        <td><a href="assets/documents/performance/2022_23/CFP PERSONAL DEVELOPMENT PLAN 2022-23.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>Financial Disclosures Director Development Planning</td>
+                                        <td><a href="assets/documents/performance/2022_23/Financial Disclosures Director Development Planning.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>Financial Disclosures Director Technical Services</td>
+                                        <td><a href="assets/documents/performance/2022_23/Financial Disclosures Director Technical Services.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>Performance Agreement Director Development Planniing</td>
+                                        <td><a href="assets/documents/performance/2022_23/Performance Agreement Director Development Planniing.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>Performance Agreement Director Technical Services</td>
+                                        <td><a href="assets/documents/performance/2022_23/Performance Agreement Director Technical Services.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>Personal Development Plan Director Development Planning</td>
+                                        <td><a href="assets/documents/performance/2022_23/Personal Development Plan Director Development Planning.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2022/23">
+                                        <td>2022/23</td>
+                                        <td>Personal Development Plan Director Technical Services</td>
+                                        <td><a href="assets/documents/performance/2022_23/Personal Development Plan Director Technical Services.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2021/22 Reports -->
+                                    <tr data-year="2021/22">
+                                        <td>2021/22</td>
+                                        <td>CFO FINANCIAL DISCLOSURE 2021-22</td>
+                                        <td><a href="assets/documents/performance/2021_22/CFO FINANCIAL DISCLOSURE 2021-22150921.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2021/22">
+                                        <td>2021/22</td>
+                                        <td>CFO PERFORMANCE AGREEMENT 2021-22</td>
+                                        <td><a href="assets/documents/performance/2021_22/CFO PERFORMANCE AGREEMENT 2021-22150921.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2021/22">
+                                        <td>2021/22</td>
+                                        <td>CFO PERSONAL DEVELOPMENT PLAN 2021-22</td>
+                                        <td><a href="assets/documents/performance/2021_22/CFO PERSONAL DEVELOPMENT PLAN 2021-22150921.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2020/21 Reports -->
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Financial Disclosure Municipal Manager</td>
+                                        <td><a href="assets/documents/performance/2020_21/Financial Disclosure Municipal Manager20200901.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Financial Disclosures 2020-2021 CHIEF FINANCIAL OFFICER</td>
+                                        <td><a href="assets/documents/performance/2020_21/Financial Disclosures 2020-2021 CHIEF FINANCIAL OFFICER29102020.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Performance Agreement 2020-2021 CHIEF FINANCIAL OFFICER</td>
+                                        <td><a href="assets/documents/performance/2020_21/Performance Agreement 2020-2021 CHIEF FINANCIAL OFFICER29102020.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Performance Plan Chief Financial Officer</td>
+                                        <td><a href="assets/documents/performance/2020_21/Performance Plan Chief Financial Officer27102020.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Performance Plan Municipal Manager</td>
+                                        <td><a href="assets/documents/performance/2020_21/Performance Plan Municipal Manager20200901.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Personal Development Plan 2020-2021 CHIEF FINANCIAL OFFICER</td>
+                                        <td><a href="assets/documents/performance/2020_21/Personal Development Plan 2020-2021 CHIEF FINANCIAL OFFICER29102020.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2020/21">
+                                        <td>2020/21</td>
+                                        <td>Personal Development Plan Municipal Manager</td>
+                                        <td><a href="assets/documents/performance/2020_21/Personal Development Plan Municipal Manager20200901.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- 2019/20 Reports -->
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>CFO Financial Disclosure 2019-20</td>
+                                        <td><a href="assets/documents/performance/2019_20/CFO Financial Disclosure 2019-202011112020.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>CFO PERFORMANCE AGREEMENT MK NEMANAME</td>
+                                        <td><a href="assets/documents/performance/2019_20/CFO PERFORMANCE AGREEMENT MK NEMANAME20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>CFO PERFORMANCE PLAN</td>
+                                        <td><a href="assets/documents/performance/2019_20/CFO PERFORMANCE PLAN20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>CFO PERSONAL DEVELOPMENT PLAN</td>
+                                        <td><a href="assets/documents/performance/2019_20/CFO PERSONAL DEVELOPMENT PLAN20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>FINANCIAL DISCLOSURE NF TSHIVHENGWA</td>
+                                        <td><a href="assets/documents/performance/2019_20/FINANCIAL DISCLOSURE NF TSHIVHENGWA20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>PERFORMANCE AGREEMENT. NF TSHIVHENGWA</td>
+                                        <td><a href="assets/documents/performance/2019_20/PERFORMANCE AGREEMENT. NF TSHIVHENGWA20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>PERFORMANCE PLAN MUNICIPAL MANAGER</td>
+                                        <td><a href="assets/documents/performance/2019_20/PERFORMANCE PLAN MUNICIPAL MANAGER20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="2019/20">
+                                        <td>2019/20</td>
+                                        <td>PERSONAL DEVELOPMENT PLAN MUNICIPAL MANAGER</td>
+                                        <td><a href="assets/documents/performance/2019_20/PERSONAL DEVELOPMENT PLAN MUNICIPAL MANAGER20190919.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- Older Reports (2017/18) -->
+                                    <tr data-year="Older">
+                                        <td>2017/18</td>
+                                        <td>Mr. C.M MOLOKOMME DIRECTOR TECHNICAL SERVICES</td>
+                                        <td><a href="assets/documents/performance/2017_18/Mr. C.M MOLOKOMME DIRECTOR TECHNICAL SERVICES.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="Older">
+                                        <td>2017/18</td>
+                                        <td>Mr. N.C KHARIDZHA DIRECTOR CORPORATE SERVICES</td>
+                                        <td><a href="assets/documents/performance/2017_18/Mr. N.C KHARIDZHA DIRECTOR CORPORATE SERVICES.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="Older">
+                                        <td>2017/18</td>
+                                        <td>Mr. N.F TSHIVHENGWA MUNICIPAL MANAGER</td>
+                                        <td><a href="assets/documents/performance/2017_18/Mr. N.F TSHIVHENGWA MUNICIPAL MANAGER.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="Older">
+                                        <td>2017/18</td>
+                                        <td>Ms. M.D SINTHUMULE DIRECTOR DEVELOPMENT PLANNING</td>
+                                        <td><a href="assets/documents/performance/2017_18/Ms. M.D SINTHUMULE DIRECTOR DEVELOPMENT PLANNING.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="Older">
+                                        <td>2017/18</td>
+                                        <td>Ms. M.P MAKHUBELA CHIEF FINANCIAL OFFICER</td>
+                                        <td><a href="assets/documents/performance/2017_18/Ms. M.P MAKHUBELA CHIEF FINANCIAL OFFICER.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    
+                                    <!-- Older Reports (2016/17) -->
+                                    <tr data-year="Older">
+                                        <td>2016/17</td>
+                                        <td>Financial Disclosure</td>
+                                        <td><a href="assets/documents/performance/2016_17/Financial Disclosure.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                    <tr data-year="Older">
+                                        <td>2016/17</td>
+                                        <td>Personel Development Plan</td>
+                                        <td><a href="assets/documents/performance/2016_17/Personel Development Plan.pdf" class="btn btn-primary">Download</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reports Table End-->
+
+        <script>
+            function filterReports() {
+                var selectedYear = document.getElementById('yearSelect').value;
+                var rows = document.querySelectorAll('#reportsTable tr');
+                
+                rows.forEach(function(row) {
+                    var rowYear = row.getAttribute('data-year');
+                    if (rowYear === selectedYear) {
+                        row.style.display = '';
+                    } else if (selectedYear === 'Older' && (rowYear === 'Older')) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
+
+            // Initialize the table to show the first year by default
+            document.addEventListener('DOMContentLoaded', function() {
+                filterReports();
+            });
+        </script>
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <!-- /End Footer-->
+
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+    <script src="assets/custom/js/custom.js"></script>
+</body>
+
+</html>

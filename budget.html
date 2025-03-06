@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Budget and Finances">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/MAKHADO.ico">
+
+    <title>Budget and Finances - Makhado Local Municipality</title>
+
+    <!-- animate.css-->
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- OffCanvasMenu -->
+    <link href="assets/vendor/OffCanvasMenuEffects/css/menu_sideslide.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  -->
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!--  FONT AWESOME -->
+    <link rel="stylesheet" href="assets/custom/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TOP HEADER STARTS -->
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- TOP HEADER ENDS -->
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay overlay-lighter bg-rules"
+        style="background-image: url(assets/custom/images/header.jpg);">
+        <div class="container overflow-hidden">
+            <div class="owl-carousel owl-theme default-carousel fables-sqr-nav dots-0 wow fadeInUpBig"
+                data-wow-duration="2s">
+                <div>
+                    <h1 class="white-color bold-font mt-lg-5 mb-4">MAKHADO LOCAL MUNICIPALITY<br>
+                        <span class="fables-second-text-color">BUDGET AND FINANCES</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start page content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fables-second-text-color mb-5">BUDGET AND FINANCES</h1>
+                <p class="font-15 mb-4">
+                    The Makhado Local Municipality provides access to budget and financial reports for transparency and public
+                    awareness. These reports offer insights into the municipality's financial planning, expenditures, and other
+                    important information.
+                </p>
+                <p class="font-15 mb-5">
+                    Residents and stakeholders are encouraged to review these reports to stay informed about the
+                    municipality's financial operations and performance.
+                </p>
+            </div>
+        </div>
+
+        <!-- Reports Table Starts-->
+        <div class="row"></div>
+            <div class="col-12">
+            <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body"></div>
+            <h2 class="fables-second-text-color font-20 mb-4">Budget and Financial Reports</h2>
+            <div class="form-group">
+                <label for="yearSelect">Select Year:</label>
+                <select class="form-control" id="yearSelect" onchange="filterReports()">
+                <option value="2024/25">2024/25</option>
+                <option value="2023/24">2023/24</option>
+                <option value="2022/23">2022/23</option>
+                <option value="2021/22">2021/22</option>
+                <option value="2020/21">2020/21</option>
+                <option value="2019/20">2019/20</option>
+                <option value="Older">Older</option>
+                </select>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                <thead class="fables-second-background-color text-white">
+                <tr>
+                <th scope="col">Year</th>
+                <th scope="col">Report Name</th>
+                <th scope="col">Download</th>
+                </tr>
+                </thead>
+                <tbody id="reportsTable">
+                <tr data-year="2024/25">
+                    <td>2024/25</td>
+                    <td>LIM344 Final MULTI YEAR BUDGET 2024/2025</td>
+                    <td><a href="assets/documents/budgets/2024_25/LIM344 Final MULTI YEAR BUDGET 2024_2025.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2024/25"></tr>
+                    <td>2024/25</td>
+                    <td>Lim344_Makhado A1 Schedule Draft_2024-2025</td>
+                    <td><a href="assets/documents/budgets/2024_25/Lim344_Makhado A1 Schedule Draft_2024-2025.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2024/25">
+                    <td>2024/25</td>
+                    <td>LIM344_Makhado A1 Schedule Final Budget_ 2024/2025</td>
+                    <td><a href="assets/documents/budgets/2024_25/LIM344_Makhado A1 Schedule Final Budget_ 2024_2025.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2024/25">
+                    <td>2024/25</td>
+                    <td>Lim344_Makhado Draft Budget document 2024/2025</td>
+                    <td><a href="assets/documents/budgets/2024_25/Lim344_Makhado Draft Budget document 2024_2025.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2023/24">
+                    <td>2023/24</td>
+                    <td>LIM344 FINAL MULTI YEAR BUDGET 2023/2024 240723</td>
+                    <td><a href="assets/documents/budgets/2023_24/LIM344 FINAL MULTI YEAR BUDGET 2023_2024 240723.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2023/24">
+                    <td>2023/24</td>
+                    <td>SECTION 52d_Lim343_Q4</td>
+                    <td><a href="assets/documents/budgets/2023_24/SECTION 52d_Lim343_Q4.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2022/23">
+                    <td>2022/23</td>
+                    <td>LIM344_Makhado_ A Schedule 2023 210622</td>
+                    <td><a href="assets/documents/budgets/2022_23/LIM344_Makhado_ A Schedule 2023 210622.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2021/22">
+                    <td>2021/22</td>
+                    <td>LIM344_ Makhado Adjustment Budget_B Schedule 2021/2022</td>
+                    <td><a href="assets/documents/budgets/2021_22/LIM344_ Makhado Adjustment Budget_B Schedule 2021_2022.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2021/22">
+                    <td>2021/22</td>
+                    <td>LIM344_ Makhado Draft budget_ A1 Schedule 2021/2022</td>
+                    <td><a href="assets/documents/budgets/2021_22/LIM344_ Makhado Draft budget_ A1 Schedule 2021_2022.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2021/22">
+                    <td>2021/22</td>
+                    <td>LIM344_Makhado A1 Schedule - mSCOA vs 6 5_2021_2022_2306</td>
+                    <td><a href="assets/documents/budgets/2021_22/LIM344_Makhado A1 Schedule - mSCOA vs 6 5_2021_2022_2306.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2020/21">
+                    <td>2020/21</td>
+                    <td>DRAFT DETAILED CAPITAL BUDGET 2020/2021 FINANCIAL YEARS</td>
+                    <td><a href="assets/documents/budgets/2020_21/DRAFT DETAILED CAPITAL BUDGET 2020_2021 FINANCIAL YEARS.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2020/21">
+                    <td>2020/21</td>
+                    <td>LIM344 DRAFT MULTI YEAR BUDGET 2020/2021</td>
+                    <td><a href="assets/documents/budgets/2020_21/LIM344 DRAFT MULTI YEAR BUDGET 2020_2021.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2020/21">
+                    <td>2020/21</td>
+                    <td>MAKHADO MUNICIPAL ADJUSTMENT BUDGET 2020/2021090921</td>
+                    <td><a href="assets/documents/budgets/2020_21/MAKHADO MUNICIPAL ADJUSTMENT BUDGET 2020_2021090921.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2020/21">
+                    <td>2020/21</td>
+                    <td>MTREF SUPPORTING SCHEDULE A1 TO A10</td>
+                    <td><a href="assets/documents/budgets/2020_21/MTREF SUPPORTING SCHEDULE A1 TO A10.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="2019/20">
+                    <td>2019/20</td>
+                    <td>Lim344_Makhado Final MULTI YEAR BUDGET 2019/20</td>
+                    <td><a href="assets/documents/budgets/2019_20/Lim344_Makhado Final MULTI YEAR BUDGET 201920.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="Older">
+                    <td>Older</td>
+                    <td>Adjustment Budget Makhado Multi-year 2014/2015 FY</td>
+                    <td><a href="assets/documents/budgets/Older/Adjustment Budget Makhado Multi-year 2014_2015 FY.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="Older">
+                    <td>Older</td>
+                    <td>COUNCIL_RESOLUTION ADJUSTMENT BUDGET AND MID YEAR ASSESS 2014/2015</td>
+                    <td><a href="assets/documents/budgets/Older/COUNCIL_RESOLUTION ADJUSTMENT BUDGET AND MID YEAR ASSESS 2014_2015.pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                <tr data-year="Older">
+                    <td>Older</td>
+                    <td>FINAL ANNEXURES</td>
+                    <td><a href="assets/documents/budgets/Older/FINAL ANNEXURES.xls" class="btn btn-success">Download</a></td>
+                </tr>
+                <tr data-year="Older">
+                    <td>Older</td>
+                    <td>QUALITY CERTIFICATE</td>
+                    <td><a href="assets/documents/budgets/Older/QUALITY CERTIFICATE..pdf" class="btn btn-primary">Download</a></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div></tr>
+        <!-- Reports Table End-->
+
+        <script>
+            function filterReports() {
+            var selectedYear = document.getElementById('yearSelect').value;
+            var rows = document.querySelectorAll('#reportsTable tr');
+            rows.forEach(function(row) {
+                if (row.getAttribute('data-year') === selectedYear || selectedYear === 'Older' && row.getAttribute('data-year') < '2019/20') {
+                row.style.display = '';
+                } else {
+                row.style.display = 'none';
+                }
+            });
+            }
+
+            // Initialize the table to show the first year by default
+            document.addEventListener('DOMContentLoaded', function() {
+            filterReports();
+            });
+        </script>
+    </div>
+    <!-- /End page content -->
+
+    <!-- Start Footer-->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <!-- /End Footer-->
+
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/custom/js/jquery-data-to.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+    <script src="assets/custom/js/custom.js"></script>
+</body>
+
+</html>
