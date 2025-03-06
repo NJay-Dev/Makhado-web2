@@ -113,7 +113,7 @@
                         With three supporting regional administrative offices in <strong>Dzanani, Vleifontein, and
                             Waterval</strong>.</p>
                     <a href="services.html"
-                        class="btn fables-second-background-color fables-second-border-color white-color rounded-0 mr-4 px-md-4 py-2 btn-bg-hover  white-color-hover">Our
+                        class="btn fables-second-background-color fables-second-border-color white-color rounded-0 mr-4 px-md-4 py-2 btn-bg-hover  white-color-hover">Community
                         Services</a>
                     <a href="about.html"
                         class="btn fables-second-border-color white-color rounded-0 px-md-4 py-2 fables-second-hover-background-color">Learn
@@ -687,56 +687,10 @@
         });
     });
 </script>
+
 <!-- Chatbot Starts -->
-<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
-<script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-<script defer>
-    window.botpress.on('*', (event) => {
-        Toastify({ text: `Event: ${event.type}` }).showToast();
-    });
-
-    window.botpress.on('webchat:ready', (conversationId) => {
-        Toastify({ text: 'Webchat Ready' }).showToast();
-    });
-
-    window.botpress.on('webchat:opened', (conversationId) => {
-        Toastify({ text: 'Webchat Opened' }).showToast();
-    });
-
-    window.botpress.on('webchat:closed', (conversationId) => {
-        Toastify({ text: `Webchat Closed` }).showToast();
-    });
-
-    window.botpress.on('conversation', (conversationId) => {
-        Toastify({ text: `Conversation: ${conversationId}` }).showToast();
-    });
-
-    window.botpress.on('message', (message) => {
-        Toastify({ text: `Message Received: ${message.id}` }).showToast();
-    });
-
-    window.botpress.on('messageSent', (message) => {
-        Toastify({ text: `Message Sent: ${message}` }).showToast();
-    });
-
-    window.botpress.on('error', (error) => {
-        Toastify({ text: `Error: ${error}` }).showToast();
-    });
-
-    window.botpress.on('webchatVisibility', (visibility) => {
-        Toastify({ text: `Visibility: ${visibility}` }).showToast();
-    });
-
-    window.botpress.on('webchatConfig', (visibility) => {
-        Toastify({ text: 'Webchat Config' }).showToast();
-    });
-
-    window.botpress.on('customEvent', (anyEvent) => {
-        Toastify({ text: 'Received a custom event' }).showToast();
-    });
-</script>
-<script src="https://mediafiles.botpress.cloud/26a83f89-ace1-4045-92ba-95b836f75669/webchat/v2/config.js"
-    defer></script>
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/03/05/06/20250305065437-WOW4WRQM.js"></script>
 <!-- Chatbot Ends -->
 
 <!-- Start Footer-->
